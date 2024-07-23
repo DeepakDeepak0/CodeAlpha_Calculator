@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-image: url("./assets/image1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+#heading{
+  font-family: "Itim", cursive;
+  color: red;
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 40%;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+tbody {
+  border: 0.5px solid black;
+  background-image: url(./assets/image2.jpg);
+  background-size: cover;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 30px white;
+}
+
+td {
+  width: 70px;
+  height: 60px;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+td > input {
+  background: #212121;
+  color: #2e5a88;
+  border: 0.5px solid black;
+  border-radius: 0.3rem;
+}
+
+td > input:active {
+  color: beige;
+  background-color: #2e5a88;
+}
+
+th {
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+}
+#screen {
+  padding: 15px;
+  background-color: #212121;
+  color: white;
+
+}
+@media screen and (max-width:412px) {
+  #heading{
+    top:10%;
+    left:55px;  
+  }
+}

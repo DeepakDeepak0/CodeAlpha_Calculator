@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Calculator.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="heading">
+        <h1>Calculator</h1>
+      </div>
+    <table class="main-container">
+      <tbody>
+      <tr>
+        <th colspan="4"><input type="text" id="screen" /></th>
+      </tr>
+      <tr>
+        <td><input type="button" value="C" onclick="onClear()" /></td>
+        <td><input type="button" value="<" onclick="onLastDigitRemove()" /></td>
+        <td>
+          <input type="button" value="%" onclick="onPickValueWithValid('%')" />
+        </td>
+        <td>
+          <input type="button" value="/" onclick="onPickValueWithValid('/')" />
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7" onclick="onPickValue(7)" /></td>
+        <td><input type="button" value="8" onclick="onPickValue(8)" /></td>
+        <td><input type="button" value="9" onclick="onPickValue(9)" /></td>
+        <td>
+          <input type="button" value="*" onclick="onPickValueWithValid('*')" />
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="onPickValue(4)" /></td>
+        <td><input type="button" value="5" onclick="onPickValue(5)" /></td>
+        <td><input type="button" value="6" onclick="onPickValue(6)" /></td>
+        <td>
+          <input type="button" value="-" onclick="onPickValueWithValid('-')" />
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="1" onclick="onPickValue(1)" /></td>
+        <td><input type="button" value="2" onclick="onPickValue(2)" /></td>
+        <td><input type="button" value="3" onclick="onPickValue(3)" /></td>
+        <td>
+          <input type="button" value="+" onclick="onPickValueWithValid('+')" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="button" value="0" onclick="onPickValueWithValid(0)" />
+        </td>
+        <td>
+          <input type="button" value="." onclick="onPickValue('.')">
+        </td>
+        <td colspan="2">
+          <input type="button" value="=" onclick="onEvaluate()" />
+        </td>
+      </tr>
+    </tbody>
+    </table>
+</div>
+
+
+    <script src="Calculator.js"></script>
+  </body>
+</html>
