@@ -17,16 +17,15 @@
   color: red;
   font-size: 2rem;
   text-align: center;
-  position: absolute;
-  top: 5%;
-  left: 40%;
+  
 }
 
 .main-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  
+  
 }
 tbody {
   border: 0.5px solid black;
@@ -76,6 +75,6 @@ input {
 @media screen and (max-width: 412px) {
   #heading {
     top: 10%;
-    left: 55px;
+    
   }
 }
