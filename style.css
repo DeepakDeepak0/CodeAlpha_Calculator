@@ -50,11 +50,15 @@ td > input {
   color: #2e5a88;
   border: 0.5px solid black;
   border-radius: 0.3rem;
+  transition: all 0.3s ease;
+
 }
 
-td > input:active {
+td > input:hover {
   color: beige;
   background-color: #2e5a88;
+  transform: scale(1.04);
+  box-shadow: 0 0 10px white;
 }
 
 th {
@@ -74,4 +78,8 @@ input {
   padding: 15px;
   background-color: #212121;
   color: white;
+}
+
+@media screen and (max-width:768px) {
+   
 }
